@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Gradient animation for hero background */
+@keyframes gradient-x {
+  0%,100% { background-size: 200% 200%; background-position: left center; }
+  50% { background-size: 200% 200%; background-position: right center; }
+}
+.animate-gradient-x {
+  animation: gradient-x 6s ease infinite;
+}
